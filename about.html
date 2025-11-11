@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>회사소개 | 이노리프트코리아</title>
+  <meta name="description" content="이노리프트는 북유럽 감성과 첨단 기술이 결합된 프리미엄 리프트 브랜드입니다. 스웨덴 본사 기술력과 한국 맞춤형 솔루션으로 공간의 가치를 높입니다.">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Noto Sans KR', sans-serif;
+      color: #222;
+      background-color: #fff;
+      overflow-x: hidden;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 80px;
+      background: white;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-size: 1.5em;
+      font-weight: 700;
+      color: #0066cc;
+    }
+
+    nav a {
+      margin: 0 16px;
+      text-decoration: none;
+      color: #222;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #0066cc;
+    }
+
+    .hero {
+      position: relative;
+      background: url('img/about-hero.jpg') center/cover no-repeat;
+      height: 60vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.4);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero h1 {
+      font-size: 2.5em;
+      font-weight: 700;
+    }
+
+    section {
+      padding: 80px 10%;
+    }
+
+    .intro, .vision, .tech {
+      max-width: 900px;
+      margin: 0 auto 80px;
+      line-height: 1.8;
+    }
+
+    .intro h2, .vision h2, .tech h2 {
+      color: #0066cc;
+      margin-bottom: 20px;
+      text-align: center;
+      font-size: 1.8em;
+    }
+
+    .intro p, .vision p, .tech p {
+      color: #444;
+      text-align: center;
+    }
+
+    .tech {
+      background: #f4f8fb;
+      padding: 80px 10%;
+      border-radius: 10px;
+    }
+
+    .tech h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .tech-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      text-align: center;
+    }
+
+    .tech-item {
+      width: 250px;
+    }
+
+    .tech-item img {
+      width: 80px;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      background: #111;
+      color: #ccc;
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        padding: 20px 30px;
+      }
+      .hero h1 {
+        font-size: 2em;
+      }
+      .tech-grid {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">이노리프트코리아</div>
+    <nav>
+      <a href="index.html">홈</a>
+      <a href="about.html" style="color:#0066cc;">회사소개</a>
+      <a href="products.html">제품소개</a>
+      <a href="design.html">디자인</a>
+      <a href="contact.html">문의하기</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>이노리프트의 이야기</h1>
+    </div>
+  </section>
+
+  <section class="intro">
+    <h2>스웨덴에서 시작된 프리미엄 리프트 브랜드</h2>
+    <p>
+      이노리프트는 북유럽 스웨덴에서 시작된 프리미엄 홈 엘리베이터 브랜드로, 디자인과 안전성을 모두 갖춘 혁신적인 리프트를 제공합니다.  
+      우리는 단순한 이동 수단이 아닌, 공간의 품격을 완성하는 하나의 인테리어 요소로서 리프트를 제안합니다.
+    </p>
+  </section>
+
+  <section class="vision">
+    <h2>Our Vision</h2>
+    <p>
+      "당신의 공간에 새로운 차원의 이동 경험을 제공합니다."<br><br>
+      이노리프트는 단순한 수직 이동이 아니라,  
+      모든 세대가 편리하고 안전하게 생활할 수 있는 공간을 만드는 것을 목표로 합니다.  
+      지속 가능한 기술과 아름다운 디자인을 결합해,  
+      한국 시장에 최적화된 리프트 문화를 선도합니다.
+    </p>
+  </section>
+
+  <section class="tech">
+    <h2>기술과 품질, 그리고 신뢰</h2>
+    <div class="tech-grid">
+      <div class="tech-item">
+        <img src="img/icon-safe.png" alt="안전기술">
+        <h3>안전 기술</h3>
+        <p>유럽 표준을 기반으로 한 안전 시스템으로<br>안심하고 사용할 수 있는 리프트를 제공합니다.</p>
+      </div>
+      <div class="tech-item">
+        <img src="img/icon-design.png" alt="디자인 혁신">
+        <h3>디자인 혁신</h3>
+        <p>북유럽 감성의 미니멀한 디자인으로<br>공간의 품격을 한 단계 높입니다.</p>
+      </div>
+      <div class="tech-item">
+        <img src="img/icon-quality.png" alt="품질 보증">
+        <h3>품질 보증</h3>
+        <p>엄격한 테스트를 거친 부품과 제작 공정을 통해<br>오랜 기간 안정적인 성능을 유지합니다.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 이노리프트코리아 | All Rights Reserved.</p>
+    <p>이메일: info@innoliftkorea.com | 전화: 02-1234-5678</p>
+  </footer>
+</body>
+</html>
+ 

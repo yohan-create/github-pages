@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>제품소개 | 이노리프트코리아</title>
+  <meta name="description" content="이노리프트의 다양한 홈 및 퍼블릭 리프트 제품을 만나보세요. 공간과 용도에 맞는 프리미엄 리프트 솔루션을 제공합니다.">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Noto Sans KR', sans-serif;
+      color: #222;
+      background-color: #fff;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 80px;
+      background: white;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-size: 1.5em;
+      font-weight: 700;
+      color: #0066cc;
+    }
+
+    nav a {
+      margin: 0 16px;
+      text-decoration: none;
+      color: #222;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #0066cc;
+    }
+
+    .hero {
+      position: relative;
+      background: url('img/products-hero.jpg') center/cover no-repeat;
+      height: 60vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.4);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero h1 {
+      font-size: 2.5em;
+      font-weight: 700;
+    }
+
+    section {
+      padding: 80px 10%;
+    }
+
+    .product-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 50px;
+      margin-top: 60px;
+    }
+
+    .product {
+      width: 320px;
+      text-align: center;
+      background: #f4f8fb;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .product:hover {
+      transform: translateY(-5px);
+    }
+
+    .product img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .product h3 {
+      color: #0066cc;
+      margin: 20px 0 10px;
+    }
+
+    .product p {
+      color: #444;
+      padding: 0 20px 30px;
+      font-size: 0.95em;
+    }
+
+    footer {
+      background: #111;
+      color: #ccc;
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">이노리프트코리아</div>
+    <nav>
+      <a href="index.html">홈</a>
+      <a href="about.html">회사소개</a>
+      <a href="products.html" style="color:#0066cc;">제품소개</a>
+      <a href="design.html">디자인</a>
+      <a href="contact.html">문의하기</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>이노리프트 제품소개</h1>
+    </div>
+  </section>
+
+  <section>
+    <h2 style="text-align:center; color:#0066cc;">당신의 공간을 위한 다양한 리프트 솔루션</h2>
+    <div class="product-list">
+      <div class="product">
+        <img src="img/home-lift.jpg" alt="홈 리프트">
+        <h3>홈 리프트</h3>
+        <p>주택, 빌라 등 개인 공간에 최적화된 컴팩트한 엘리베이터로, 안전성과 디자인을 모두 갖추었습니다.</p>
+      </div>
+      <div class="product">
+        <img src="img/villa-lift.jpg" alt="빌라 리프트">
+        <h3>빌라 리프트</h3>
+        <p>소형 공동주택에 어울리는 효율적인 리프트로, 최소한의 공간으로 최대의 편의를 제공합니다.</p>
+      </div>
+      <div class="product">
+        <img src="img/public-lift.jpg" alt="퍼블릭 리프트">
+        <h3>퍼블릭 리프트</h3>
+        <p>상가, 오피스 등 공공 공간에 설치되는 고신뢰성 모델로, 내구성과 안전성을 강조했습니다.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 이노리프트코리아 | All Rights Reserved.</p>
+    <p>이메일: info@innoliftkorea.com | 전화: 1800-9660</p>
+  </footer>
+</body>
+</html>

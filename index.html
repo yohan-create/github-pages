@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>이노리프트코리아 | 프리미엄 홈 엘리베이터</title>
+  <meta name="description" content="이노리프트는 북유럽 감성의 프리미엄 홈 엘리베이터 브랜드입니다. 주거 공간에 조화를 이루는 안전하고 세련된 리프트 솔루션을 만나보세요.">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Noto Sans KR', sans-serif;
+      color: #222;
+      background-color: #fff;
+      overflow-x: hidden;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 80px;
+      background: white;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-size: 1.5em;
+      font-weight: 700;
+      color: #0066cc;
+    }
+
+    nav a {
+      margin: 0 16px;
+      text-decoration: none;
+      color: #222;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #0066cc;
+    }
+
+    .hero {
+      position: relative;
+      background: url('img/hero-lift.jpg') center/cover no-repeat;
+      height: 90vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.4);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero h1 {
+      font-size: 3em;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
+
+    .hero a {
+      background: #0066cc;
+      color: white;
+      padding: 14px 36px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .hero a:hover {
+      background: #004c99;
+    }
+
+    section {
+      padding: 80px 10%;
+    }
+
+    .intro {
+      text-align: center;
+    }
+
+    .intro h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    .intro p {
+      color: #555;
+      line-height: 1.7;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 40px;
+      margin-top: 60px;
+    }
+
+    .product-card {
+      background: #f4f8fb;
+      border-radius: 10px;
+      overflow: hidden;
+      width: 320px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .product-card h3 {
+      margin: 20px 0 10px;
+      color: #0066cc;
+    }
+
+    .product-card p {
+      padding: 0 20px 30px;
+      color: #444;
+      font-size: 0.95em;
+    }
+
+    .cta {
+      text-align: center;
+      background: #0066cc;
+      color: white;
+      padding: 80px 20px;
+    }
+
+    .cta h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    .cta a {
+      display: inline-block;
+      background: white;
+      color: #0066cc;
+      padding: 14px 36px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 700;
+      transition: 0.3s;
+    }
+
+    .cta a:hover {
+      background: #f4f8fb;
+    }
+
+    footer {
+      background: #111;
+      color: #ccc;
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        padding: 20px 30px;
+      }
+
+      .hero h1 {
+        font-size: 2em;
+      }
+
+      .products {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">이노리프트코리아</div>
+    <nav>
+      <a href="index.html">홈</a>
+      <a href="about.html">회사소개</a>
+      <a href="products.html">제품소개</a>
+      <a href="design.html">디자인</a>
+      <a href="contact.html">문의하기</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>당신의 공간을 완성하는<br>프리미엄 홈 엘리베이터</h1>
+      <p>북유럽 감성 디자인과 혁신적인 기술이 만난 이노리프트</p>
+      <a href="products.html">제품 보러가기</a>
+    </div>
+  </section>
+
+  <section class="intro">
+    <h2>이노리프트코리아를 소개합니다</h2>
+    <p>
+      이노리프트는 단순한 엘리베이터를 넘어, 당신의 공간을 한층 더 아름답고 편리하게 만드는 프리미엄 홈 리프트 브랜드입니다.
+      스웨덴 본사의 기술력과 한국의 주거 환경을 반영한 맞춤형 솔루션으로, 편안함과 디자인을 동시에 제공합니다.
+    </p>
+
+    <div class="products">
+      <div class="product-card">
+        <img src="img/home-lift.jpg" alt="홈 엘리베이터">
+        <h3>홈 엘리베이터</h3>
+        <p>주거 공간에 최적화된 컴팩트한 사이즈와 세련된 디자인으로, 집안 어디든 설치 가능한 홈 리프트입니다.</p>
+      </div>
+      <div class="product-card">
+        <img src="img/public-lift.jpg" alt="퍼블릭 리프트">
+        <h3>퍼블릭 리프트</h3>
+        <p>빌딩, 사무실, 상가 등 공용 공간을 위한 안정적이고 효율적인 리프트 솔루션을 제공합니다.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>맞춤 상담을 받아보세요</h2>
+    <p>전문 상담가가 고객님의 공간과 예산에 맞는 최적의 리프트 솔루션을 제안해드립니다.</p>
+    <a href="contact.html">문의하기</a>
+  </section>
+
+  <footer>
+    <p>© 2025 이노리프트코리아 | All Rights Reserved.</p>
+    <p>이메일: info@innoliftkorea.com | 전화: 1800-9660</p>
+  </footer>
+</body>
+</html>
+ 
+
